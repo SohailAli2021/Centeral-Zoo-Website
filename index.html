@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Zoo</title>
+    
+    
+    <script src="https://kit.fontawesome.com/68fa96ce2a.js" crossorigin="anonymous"></script>
+    <!-- slider link -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+ 
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+      <!-- jquery popup form -->
+      <script>
+          
+        function openForm()
+        {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+                    </script>
+    <!-- form ends -->
+    <!--form  -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Feed back</h1>
+    
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="Name" required>
+        
+    
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="Massage"><b>Massage</b></label>
+            <input type="text" placeholder="Enter Massage" name="text" required>
+        
+           
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+        </form>    
+        
+        </div>
+    
+    <!-- navigation start -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>     
+        </label>
+     <img src="img/logo-removebg-preview.png" class="logo">
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catgory1.html">category</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li onclick="openForm();">Feedback</li>
+    
+    
+            
+        </ul>
+    </nav>
+    <!-- navigation end -->
+      <!-- slider start -->
+      <div class="slider">
+        <img class="nature" src="img/ppp1.PNG" width="100%" height="100%">
+        <img class="nature" src="img/ppp2.PNG" width="100%" height="100%">
+        <img class="nature" src="img/PPP3.PNG" width="100%" height="100%">
+    </div>
+<script>
+w3.slideshow(".nature", 2500);
+</script>
+<!-- slider end -->
+
+<div>
+    <img src="img/pic1.jpg" style="width:50%;">
+    <img src="img/pic2.jpg" style= "width:50%; float: right;">
+    <img src="img/pic3.jpg" style="width: 50%;">
+    <img src="img/pic4.jpg" style="width: 50%; float: right;">
+    <img src="img/pic9.jpg" style="width: 50%;">
+    <img src="img/zoo4.jpg" style="width: 50%; float: right;">
+</div>
+
+
+ <!-- ...footer section start... --> 
+ <div>
+ <footer class="footer-area">
+    <div class="main">
+      <div class="footer">
+        <div class="single-footer">
+          <h4>About Us</h4>
+          <p>Karachi Zoo, established in year 1878, was commonly called as 'Mahatma Gandhi Garden'. Earlier in 1861, the zoo was transferred to municipality by the British Indian government. In 1878, the municipality placed the zoo under a trust to be developed out of public subscription.</p>
+          <div class="footer-social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="single-footer">
+          <h4>main menu</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+            <li><a href="aboutus.html"><i class="fas fa-chevron-right"></i>About us</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+            <li><a href="cate.html"><i class="fas fa-chevron-right"></i>Category</a></li>
+            <li><a href="event.html"><i class="fas fa-chevron-right"></i>Event</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact us</a></li>
+            <li onclick="openForm();"><i class="fas fa-chevron-right"></i>Feedback</li>
+          </ul>
+        </div>           
+        <div class="single-footer">
+         <h4>Contact Us</h4>
+         <ul>
+           <li><a href=""><i class="fas fa-map-marker-alt"></i>Karachi</a></li>
+           <li><a href=""><i class="fas fa-mobile-alt"></i>03170236304</a></li>
+           <li><a href=""><i class="fas fa-envelope"></i>info@centralzoo.com</li>
+           <li><a href=""><i class="fas fa-globe-europe"></i>www.centralzoo.com</a></li>
+        </ul>
+       </div>
+
+        <div class="single-footer">
+         <h4> Zoo Timing</h4>
+         <ul>
+           <li><a href=""><i class="fas fa-clock"></i>9am TO 5pm</a></li>
+                 </ul>
+       </div>
+       </div>
+       <div class="copy">
+         <p>&copy; 2021 all rights reserved</p>
+       </div>
+    </div>
+  </footer>
+<!-- ...footer section end...> -->
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Zoo</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+    <script src="https://kit.fontawesome.com/68fa96ce2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+       <!-- jquery popup form -->
+       <script>
+          
+        function openForm()
+        {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+                    </script>
+    <!-- form ends -->
+    <!--form  -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Feed back</h1>
+    
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="Name" required>
+        
+    
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+
+            <label for="Massage"><b>Massage</b></label>
+            <input type="text" placeholder="Enter Massage" name="text" required>
+        
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+        </form>    
+        
+        </div>
+
+</head>
+<body>
+    <!-- navigation start -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>     
+        </label>
+     <img src="img/logo-removebg-preview.png" class="logo">
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catgory1.html">categrey</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li onclick="openForm();">Feedback</li>
+        </ul>
+    </nav>
+
+    <h1>Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="img/elephant.jpg" id="fullImg">
+        <span onclick="closefullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="img/deer.jfif" id="pic2" onclick="openfullImg(this.src)">
+       
+        <img src="animal/black leopard.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/img7.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/monkey.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/photo-1546182990-dffeafbe841d - Copy.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/zarafa.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/cheeta.jpg" id="pic2" onclick="openfullImg(this.src)" >
+        <img src="bird/Budgerigar-1.jpg" id="pic2" onclick="openfullImg(this.src)">
+
+        <img src="img1/istockphoto-1303828795-170667a.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="img1/p7.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/duck.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/falcon.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/finches.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/flamingo.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/ostrih.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/parrot.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/peacock.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="bird/colunbiade.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="animal/img8.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="sea/jeellyfish.jpg" id="pic2" onclick="openfullImg(this.src)" >
+        <img src="sea/orcas.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="sea/dolpin2.jpg" id="pic2" onclick="openfullImg(this.src)">
+        <img src="sea/turtle.jfif" id="pic2" onclick="openfullImg(this.src)">
+        <img src="sea/sea5.jpg" id="pic2" onclick="openfullImg(this.src)">
+    </div>
+     
+
+
+
+    
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openfullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+function closefullImg(){
+    fullImgBox.style.display = "none";
+}
+
+    </script>
+  <!-- ...footer section start... --> 
+ <footer class="footer-area">
+    <div class="main">
+      <div class="footer">
+        <div class="single-footer">
+          <h4>About Us</h4>
+          <p>Karachi Zoo, established in year 1878, was commonly called as 'Mahatma Gandhi Garden'. Earlier in 1861, the zoo was transferred to municipality by the British Indian government. In 1878, the municipality placed the zoo under a trust to be developed out of public subscription.</p>
+          <div class="footer-social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="single-footer">
+          <h4>main menu</h4>
+          <ul>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Home</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>About us</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Gallery</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Category</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Event</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Contact us</a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i>Feedback</a></li>
+          </ul>
+        </div>           
+        <div class="single-footer">
+         <h4>Contact Us</h4>
+         <ul>
+           <li><a href=""><i class="fas fa-map-marker-alt"></i>Karachi</a></li>
+           <li><a href=""><i class="fas fa-mobile-alt"></i>03170236304</a></li>
+           <li><a href=""><i class="fas fa-envelope"></i>info@centralzoo.com</li>
+           <li><a href=""><i class="fas fa-globe-europe"></i>www.centralzoo.com</a></li>
+        </ul>
+       </div>
+
+        <div class="single-footer">
+         <h4>Developed By</h4>
+         <ul>
+           <li><a href=""><i class="fas fa-chevron-right"></i>Sohail Ali</a></li>
+           <li><a href=""><i class="fas fa-chevron-right"></i>Aswad</a></li>
+           <li><a href=""><i class="fas fa-chevron-right"></i>Safder</a></li>
+         </ul>
+       </div>
+       </div>
+       <div class="copy">
+         <p>&copy; 2021 all rights reserved</p>
+       </div>
+    </div>
+  </footer>
+<!-- ...footer section end...> -->
+
+
+</body>
+</html>

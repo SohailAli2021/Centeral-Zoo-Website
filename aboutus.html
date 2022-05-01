@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Zoo</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+    <script src="https://kit.fontawesome.com/68fa96ce2a.js" crossorigin="anonymous"></script>
+    <!-- slider link -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+ 
+
+    <link rel="stylesheet" href="stylesheet.css">
+     <!-- jquery popup form -->
+     <script>
+          
+        function openForm()
+        {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+                    </script>
+    <!-- form ends -->
+    <!--form  -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Feed back</h1>
+    
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="Name" required>
+        
+    
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="Massage"><b>Massage</b></label>
+            <input type="text" placeholder="Enter Massage" name="text" required>
+        
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+        </form>    
+        
+        </div>
+    
+</head>
+<body>
+    <!-- navigation start -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>     
+        </label>
+     <img src="img/logo-removebg-preview.png" class="logo">
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catgory1.html">categrey</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li onclick="openForm();">Feedback</li>
+        </ul>
+    </nav>
+    <div class="bottom-header-sub">
+        <div class="container">
+            <div class="sub-page">
+            <h2>About Us</h2>
+        </div>
+          </div>
+        <main class="main" id="main" style="padding: 50px 0; text-align: left;">
+            <div class="container">
+            <div class="contact-sub-about">
+                <img src="img/imgeabout (2).jpg" alt="" id="imge1">
+                <h3><span>About</span>Us</h3>
+                <p>Karachi Zoo, established in year 1878, was commonly called as 'Mahatma Gandhi Garden'. Earlier in 1861, the zoo was transferred to municipality by the British Indian government. In 1878, the municipality placed the zoo under a trust to be developed out of public subscription. Later, the zoo was once again opened to public in 1881. After the independence of Pakistan in 1947, the name was changed to 'Karachi Zoological Gardens' or 'Karachi Zoo' for short. In 1953, Karachi Metropolitan Corporation introduced a zoo curator and a qualified veterinary doctor.[1] In 1991-2 CDGK for remodelling of Natural History Museum, which was carried out. In 1992, the Japanese Princess inaugurated the remodeled Natural History Museum. In 2008, total employees of Karachi Zoo is about 240 staff members.
+    </p>
+         </div>
+        </div>
+          </main>
+    <!-- footer -->
+      
+ <!-- ...footer section start... --> 
+ <div style="background-image: url(img1/elephant.jpg);">
+    <footer class="footer-area">
+       <div class="main">
+         <div class="footer">
+           <div class="single-footer">
+             <h4>About Us</h4>
+             <p>Karachi Zoo, established in year 1878, was commonly called as 'Mahatma Gandhi Garden'. Earlier in 1861, the zoo was transferred to municipality by the British Indian government. In 1878, the municipality placed the zoo under a trust to be developed out of public subscription.</p>
+             <div class="footer-social">
+               <a href=""><i class="fab fa-facebook-f"></i></a>
+               <a href=""><i class="fab fa-twitter"></i></a>
+               <a href=""><i class="fab fa-linkedin-in"></i></a>
+               <a href=""><i class="fab fa-instagram"></i></a>
+             </div>
+           </div>
+           <div class="single-footer">
+             <h4>main menu</h4>
+             <ul>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Home</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>About us</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Gallery</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Category</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Event</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Contact us</a></li>
+               <li><a href=""><i class="fas fa-chevron-right"></i>Feedback</a></li>
+             </ul>
+           </div>           
+           <div class="single-footer">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href=""><i class="fas fa-map-marker-alt"></i>Karachi</a></li>
+              <li><a href=""><i class="fas fa-mobile-alt"></i>03170236304</a></li>
+              <li><a href=""><i class="fas fa-envelope"></i>info@centralzoo.com</li>
+              <li><a href=""><i class="fas fa-globe-europe"></i>www.centralzoo.com</a></li>
+           </ul>
+          </div>
+   
+           <div class="single-footer">
+            <h4>Developed By</h4>
+            <ul>
+              <li><a href=""><i class="fas fa-chevron-right"></i>Sohail Ali</a></li>
+              <li><a href=""><i class="fas fa-chevron-right"></i>Aswad</a></li>
+              <li><a href=""><i class="fas fa-chevron-right"></i>Safder</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="copy">
+            <p>&copy; 2021 all rights reserved</p>
+          </div>
+       </div>
+     </footer>
+   <!-- ...footer section end...> -->
+   </div>
+    </div>
+</body>
+</html>

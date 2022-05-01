@@ -1,0 +1,521 @@
+/* navbar  start*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+nav{
+    background-color: brown;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+
+    margin-top: -12.9px;
+       width: 150px;
+   cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 3px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background-color:#1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .logo{ 
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+nav ul li a{
+    font-size: 16px;
+}
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:#2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a:hover,a.active{
+    background: none;
+    color: #0082e6;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+}
+section{
+    background: url() no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+/* navbar  end*/
+     /* form starts */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }   
+/* About us start */
+.bottom-header-sub{
+    background:url(img/derrrr.jpg) no-repeat top center;
+     background-size: 100%;
+    height: 200px;
+    background-position: 0 -140px;
+    margin-top: 0%;
+}
+.sub-page{
+    font-size:xx-large;
+    font-family: bold;
+    text-align: center;
+    line-height: 50px;
+    color: brown;
+    text-transform: uppercase;
+}
+.contact-sub-about img{
+    float: left;
+    margin-right: 50px;
+    margin-top: 90px;
+
+}
+
+
+.contact-sub-about{
+    margin-top: 120px;
+    font-family: cursive;
+    line-height: 3.1em;
+}
+.contact-sub-about span{
+     color:blue;
+}
+#imge1{
+    border-radius:70px;
+}
+
+/* About us end */
+ /* gallery start */
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+#pic2{
+    width: 100%;
+    height: 90%;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2 );
+}
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center; 
+    z-index: 100;
+}
+.full-img  img{
+    width: 90%;
+    max-width: 500px;
+} 
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* gallery end */
+
+/* categrey start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+#cat1{
+    height: 250px;
+    width: 250px;
+
+}
+.box{
+    float: left;
+    color:blue;
+    line-height: 110px;
+    text-align: center;
+    margin: 10px;
+    padding: 4px;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.btn{
+
+    border-radius: -70px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 0px;
+    padding: 12px 16px;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+
+#buttons{
+    
+    text-align: center;
+
+}
+/* categrey end */
+
+/* contact us start */
+/*Css  file */
+*{
+    margin: 0;
+    padding: 0;
+  }
+.name{
+     background-color:#f4f7f9;
+     border-radius:2px;
+     width:100%; 
+     padding:10px; 
+     text-decoration:none; 
+     border:none; 
+     outline:none;
+     display: inline-block; 
+     vertical-align: top;
+     position: relative; 
+     height:40px;
+  }
+.mail{
+  background-color:#f4f7f9; 
+  border-radius:2px;
+  padding:10px; 
+  text-decoration:none; 
+  border:none; 
+  outline:none;display: 
+  inline-block; 
+  vertical-align: top;
+  position: relative; 
+  height:40px;
+}
+.message{
+  background-color:#f4f7f9; 
+  border-radius:2px;
+  width:100%; 
+  padding:10px; 
+  text-decoration:none; 
+  border:none; 
+  outline:none;
+  display: inline-block; 
+  vertical-align: top;
+  position: relative; 
+  height:100px;
+  }
+  .bttn{
+          background-color:#00979d;
+          color: white;
+          transition: .8s;
+          line-height: 50%;
+          width:100%;
+          padding:10px; 
+          text-decoration:none; 
+          border:none; 
+          outline:none;
+          display: inline-block; 
+          vertical-align: top;
+          position: relative;
+          height:35px;
+}
+
+.bttn:hover{
+          background-color: #006f73;
+          color:white;
+          border-radius:5px;
+}
+
+.contactus{
+    background:url(img/derrrr.jpg) no-repeat top center;
+    background-size: 100%;
+    height: 200px;
+    background-position: 0 -140px;
+    margin-top: 0%;
+     padding:100px;
+  
+}
+
+#cbb{
+          margin-top:-8px;
+          width:100%;
+          float:right;
+          font-size:50px;
+          animation-name:cnt;
+          animation-duration:5s; 
+          color:brown;
+          font-size: xx-large;
+          font-style: bold;
+          animation-direction: alternate;
+ }
+  
+@keyframes cnt{
+  0%{ 
+      width:300px;
+        color: #FFFFFF;
+    }
+  50%{
+       color:#a39e9e;
+  }
+  70%{
+       color:#CCC;
+    }
+  100%{
+       color:#FFFFFF;
+    }
+  
+  }
+ .footer-clean0{
+   list-style: none;
+ }
+/* contact us end */
+
+/* ...footer section start... */
+.footer-area{
+    margin-top: 100px;
+    padding:50px 0px;
+    color: #fff; 
+    /* background: #136113; */
+    background: #2c3e50;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.main{
+    width:1200px;
+    margin:0 auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.single-footer{
+    width:230px;
+}
+
+.single-footer:first-child{
+    width:400px;
+}
+.single-footer h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.footer-social{
+    margin-top: 20px;
+}
+.footer-social a{
+    color:#fff;
+    border: 1px solid #fff;
+    width:40px;
+    height:40px;
+    display:inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.footer-social a:hover{
+    color:#fff;
+}
+
+.single-footer ul{
+    list-style: none;
+    padding-left: 5px;
+}
+.single-footer ul li{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+}
+.single-footer ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration:none;
+}
+.single-footer ul li a i{
+    position: absolute;
+    left: 0;
+    top:5px;
+}
+.copy{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:768px){
+    .main{
+        width:320px;
+    }
+    .single-footer:first-child, .single-footer{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+

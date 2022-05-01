@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Zoo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+    <script src="https://kit.fontawesome.com/68fa96ce2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+       <!-- jquery popup form -->
+       <script>
+          
+        function openForm()
+        {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+                    </script>
+    <!-- form ends -->
+    <!--form  -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Feed back</h1>
+    
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="Name" required>
+        
+    
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+
+            
+            <label for="Massage"><b>Massage</b></label>
+            <input type="text" placeholder="Enter Massage" name="text" required>
+            
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+        </form>    
+        
+        </div>
+
+</head>
+<body>
+      <!-- navigation start -->
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>     
+        </label>
+     <img src="img/logo-removebg-preview.png" class="logo">
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catgory1.html">categrey</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li onclick="openForm();">Feedback</li>
+            
+        </ul>
+    </nav>
+    <h1>Upcoming Events</h1>
+
+
+
+    <div class="card" style="float: left; margin-bottom: 20%; margin-top: 3.3%; margin-left: 5%;">
+        <img src="bird/Budgerigar-1.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 style="font-size:x-large;">Budgerigar</h1>
+        <p class="price">$19.99</p>
+        <p>Do you think dolphin is smarter than others? Don’t miss the chance to witness the live dolphin parade and enjoy the miracles they can do.They will entertain you to the maximum.. Quis ipsum suspendisse ultrices gravida.</p>
+
+        <p><button>buy Ticket</button></p>
+      </div>
+
+      <div class="card" style="float: left; margin-bottom: 20%; margin-top: 3.5%; margin-left: 3%;">
+        <img src="animal/black leopard.jfif" alt ="Denim Jeans" style="width:100%">
+        <h1 style="font-size:x-large;"> Black leopard</h1>
+        <p class="price">$19.99</p>
+        <p>Do you think dolphin is smarter than others? Don’t miss the chance to witness the live dolphin parade and enjoy the miracles they can do.They will entertain you to the maximum.. Quis ipsum suspendisse ultrices gravida.</p>
+
+        <p><button>buy Ticket</button></p>
+      </div>
+
+
+      <div class="card" style="float: left; margin-bottom: 20%; margin-top: 3.5%; margin-left: 3%;">
+        <img src="sea/duck.jfif" alt="Denim Jeans" style="width:100%">
+        <h1 style="font-size:x-large;">Dolphin</h1>
+        <p class="price">$19.99</p>
+        <p>Do you think dolphin is smarter than others? Don’t miss the chance to witness the live dolphin parade and enjoy the miracles they can do.They will entertain you to the maximum.. Quis ipsum suspendisse ultrices gravida.</p>
+        <p><button>buy Ticket</button></p>
+      </div> 
+      
+      <div class="card" style="float: left; margin-bottom: 20%; margin-top: 3.5%; margin-left: 5%;">
+        <img src="bird/parrot.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 style="font-size:x-large;">Parrot</h1>
+        <p class="price">$19.99</p>
+        <p>Do you think dolphin is smarter than others? Don’t miss the chance to witness the live dolphin parade and enjoy the miracles they can do.They will entertain you to the maximum.. Quis ipsum suspendisse ultrices gravida.</p>
+        <p><button>buy Ticket</button></p>
+      </div> 
+<style>
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+ 
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+    </style>
+
+<!-- footer area start -->
+<div style="margin-top: 45%; background-color: #2c3e50;">
+<footer class="bg-white" >
+    <div class="container py-5" >
+      <div class="row py-4" >
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" ><img src="img/logo.png" alt="" width="180" class="mb-3">
+          <p class="font-italic text-muted">You can Find All the Zoo Entertainment on our Website </p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4"><b>Category</b></h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted"><b>Animals</b></a></li>
+            <li class="mb-2"><a href="#" class="text-muted"><b>Wild</b></a></li>
+            <li class="mb-2"><a href="#" class="text-muted"><b>Birds</b></a></li>
+            <li class="mb-2"><a href="#" class="text-muted"><b>Sea Animals</b></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Zoo Timing</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted"></a></li>
+            <li class="mb-2"><a href="#" class="text-muted">9am to 5om</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4"><b>Contact</b></h6>
+          <p class="text-muted mb-4">You can Find all the Zoo entertainment on our Website</p>
+          <div class="p-1 rounded border">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- footer end -->
+</div>
+
+</body>
+
+</html>
